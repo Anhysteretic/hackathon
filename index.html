@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinner Table</title>
+  </head>
+  <body>
+
+    <!-- Homepage View -->
+    <div id="homepage-view" class="view-container">
+        <div class="content-wrapper">
+            <h1>What's on your dinner table?</h1>
+            <button id="open-modal-btn">
+                Make your dinner
+            </button>
+        </div>
+    </div>
+
+    <div id="threejs-modal" class="view-container modal-hidden">
+        <button id="close-modal-btn">&times;</button>
+        
+        <div id="prompt-container">
+          <input type="text" id="prompt-input" placeholder="Describe a food item to add to the table...">
+        </div>
+
+        <div id="image-popup-overlay">
+          <div class="popup-content">
+            <h3>Image Generated</h3>
+            <img src="" id="popup-image" alt="Generated Preview">
+            <div class="popup-actions">
+              <button id="popup-discard-btn">Discard</button>
+              <button id="popup-create-btn">Create 3D Model</button>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
