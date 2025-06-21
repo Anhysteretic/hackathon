@@ -3,7 +3,7 @@ export default async function handler(request, response) {
   const path = request.url.replace('/replicate-api', '');
 
   // Forward the request to the target API
-  const apiResponse = await fetch(`https://api.replicate.com${path}`, {
+  const apiResponse = await fetch(`https://api.replicate.com/${path}`, {
     method: request.method,
     headers: {
       ...request.headers,

@@ -3,7 +3,7 @@ export default async function handler(request, response) {
   const path = request.url.replace('/api', '');
 
   // Forward the request to the target API
-  const apiResponse = await fetch(`https://api.bfl.ai${path}`, {
+  const apiResponse = await fetch(`https://api.bfl.ai/${path}`, {
     method: request.method,
     headers: {
       ...request.headers,
